@@ -1,0 +1,36 @@
+.flatpickr-calendar {
+  font-size: 24px;
+  line-height: 2;
+  width: 700px;
+}
+
+.flatpickr-months .flatpickr-month {
+  height: 50px;
+}
+.flatpickr-current-month {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  display: flex;
+}
+.flatpickr-days {
+  width: 700px;
+}
+.dayContainer {
+  width: 700px;
+  min-width: 700px;
+  max-width: 700px;
+}
+.flatpickr-day {
+  display: flex;
+  align-items: center;
+  max-width: 80px;
+  height: 80px;
+}
+
+.flatpickr-time input {
+  font-size: 24px;
+}

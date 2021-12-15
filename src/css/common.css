@@ -17,6 +17,19 @@ img {
   max-width: 100%;
 }
 
+/* menu */
+
+.menu {
+  list-style: none;
+  font-size: 2em;
+}
+
+.menu li {
+  padding: 10px 0;
+}
+
+/* Color switcher */
+
 .container {
   position: absolute;
   top: 50%;
@@ -35,3 +48,32 @@ button[data-stop] {
 button[data-stop] {
   margin-left: 10px;
 }
+
+/* Countdown timer */
+.timer {
+  display: flex;
+}
+
+button[timer-start],
+#datetime-picker {
+  font-size: 3.5em;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.field + .field {
+  margin-left: 40px;
+}
+.value {
+  font-size: 8em;
+  line-height: 1em;
+}
+.label {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+/* Promise generator */

@@ -28,6 +28,7 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0] < new Date()) {
       Notiflix.Notify.failure('Please choose a date in the future');
+      startButton.setAttribute('disabled', '');
     } else {
       startButton.removeAttribute('disabled');
     }

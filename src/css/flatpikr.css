@@ -1,7 +1,7 @@
 .flatpickr-calendar {
-  font-size: 24px;
+  font-size: 1em;
   line-height: 2;
-  width: 700px;
+  width: 25%;
 }
 
 .flatpickr-months .flatpickr-month {
@@ -17,20 +17,20 @@
   display: flex;
 }
 .flatpickr-days {
-  width: 700px;
+  width: 100%;
 }
 .dayContainer {
-  width: 700px;
-  min-width: 700px;
-  max-width: 700px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 .flatpickr-day {
   display: flex;
   align-items: center;
-  max-width: 80px;
-  height: 80px;
+  max-width: 10%;
+  height: 10%;
 }
 
 .flatpickr-time input {
-  font-size: 24px;
+  font-size: 2em;
 }

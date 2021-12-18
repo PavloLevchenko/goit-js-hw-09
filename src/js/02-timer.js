@@ -7,8 +7,8 @@ import '../css/flatpikr.css';
 import Notiflix from 'notiflix';
 
 Notiflix.Notify.init({
-  fontSize: '46px',
-  width: '50%',
+  fontSize: '36px',
+  width: '25%',
   clickToClose: true,
   useIcon: false,
   position: 'right-top', // 'right-top' - 'right-bottom' - 'left-top' - 'left-bottom' && v2.2.0 and the next versions => 'center-top' - 'center-bottom' - 'center-center'
@@ -56,17 +56,17 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
-function addLeadingZero(value) {
-  const newValue = {};
-  for (const key in value) {
-    const text = String(value[key]);
+function addLeadingZero(values) {
+  const newValues = {};
+  Object.entries(values).forEach(([key, value]) => {
+    const text = String(value);
     if (text.length < 2) {
-      newValue[key] = text.padStart(2, '0');
+      newValues[key] = text.padStart(2, '0');
     } else {
-      newValue[key] = text;
+      newValues[key] = text;
     }
-  }
-  return newValue;
+  });
+  return newValues;
 }
 
 const fillTime = ({ days, hours, minutes, seconds }) => {

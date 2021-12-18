@@ -20,11 +20,8 @@ const form = document.querySelector('.promice__form');
 
 function fillFields(form) {
   const fields = {};
-  for (const element of form.elements) {
-    if (element.type != 'submit') {
-      fields[element.name] = element.value;
-    }
-  }
+  const formData = new FormData(form);
+  formData.forEach((value, name) => fields[name] = value);
   return fields;
 }
 

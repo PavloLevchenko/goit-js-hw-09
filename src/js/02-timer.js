@@ -87,6 +87,7 @@ let timerId = null;
 const startTimer = () => {
   timerId = setInterval(refreshTime, 1000);
   startButton.textContent = 'Stop';
+  document.querySelector(selector).setAttribute('disabled', '');
   startButton.addEventListener('click', stopTimer);
   startButton.removeEventListener('click', startTimer);
 };
@@ -96,6 +97,7 @@ const stopTimer = () => {
   startButton.addEventListener('click', startTimer);
   startButton.removeEventListener('click', stopTimer);
   startButton.textContent = 'Start';
+  document.querySelector(selector).removeAttribute('disabled');
 };
 
 startButton.addEventListener('click', startTimer);
